@@ -8,7 +8,7 @@
 
 // What to do:
 // Input 2 values, a, and salt. 
-// Hash all two values using Poseidon hash_2 as a hashing mechanism. 
+// Hash all two values using mimc_bn254 as a hashing mechanism. 
 // Return the hash result as a public field
 
 // By default, all inputs are private in noir. We will not define any input as public because we want them to be a secret, at least in this case. 
@@ -25,5 +25,5 @@ fn main(value: Field, salt: Field) -> pub Field{
 #[test]
 // Do not modify this function
 fn test_main() {
-    constrain main(8,18) == 0x2fc28bbd1aca48224c572b7bf14be136aebf89eda385fc148cd7b45d5eab78b5;
+    constrain main(8,18) == 0x0beff53084542749e294a2a122a41849bb33d923f16b7108e213f670ca80bd99;
 }
