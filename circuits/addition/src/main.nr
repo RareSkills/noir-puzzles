@@ -1,9 +1,8 @@
+// The goal is to modify the main function to add the two inputs and return the result of the addition
 
-// Add the 2 inputs and return the result
-fn main( x : Field, y :  Field) {
-  //Your code here
+fn main(x: Field, y: Field) -> pub Field {
+    
 }
-
 
 ////////////////////
 //     TESTS      //
