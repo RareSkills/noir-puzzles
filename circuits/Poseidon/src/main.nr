@@ -8,7 +8,11 @@ fn main(x : Field) -> pub Field {
   
 }
 
+////////////////////
+//     TESTS      //
+////////////////////
 #[test]
+// Do not modify this function
 fn test_main() {
    constrain main(256) == 0x0430fbd12a16d8729d8452729d5ee831a85918c402c77ae3b8da153c8725e206;
 }
