@@ -12,4 +12,5 @@ fn main(x: Field, y: Field) -> pub Field {
 fn test_add() {
     constrain main(4,5) == 9;
     constrain main(2,9) == 11;
+    
 }
