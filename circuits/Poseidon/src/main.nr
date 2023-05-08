@@ -1,7 +1,5 @@
-// Noir has some available cryptographic hashing methods, poseidon is one of
-// them Import the poseidon hash_1 hash method from the noir standard library
-// Hash the input variable 'x', and return the output of the hash as a variable
-// 'out' .
+// Import the poseidon hash_1 hash method from the noir standard library,
+// hash the input variable 'x', and return the output of the hash as a variable 'out'.
 
 // HINT: use the correct datatype
 

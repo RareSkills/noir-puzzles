@@ -1,6 +1,5 @@
-// The goal is to modify the main function so it takes an array of field of
-// length '3', and a loop that adds the elements of the array. Return the result
-// of the addition
+// Modify the "main" function so it takes an array of field of length '3',
+// and a loop that adds the elements of the array. Return the result of the addition.
 
 fn main() -> pub Field {}
 

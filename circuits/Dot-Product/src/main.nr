@@ -1,5 +1,5 @@
-// Use the main function to calculate the dot-product of a 4-item field array
-// ‘x’ and ‘y’, and then return the result as a mutable variable 'out'
+// Use the main function to calculate the dot-product of a 4-item field array 'x' and 'y',
+// and then return the result as a mutable variable 'out'.
 
 fn main(x : [ Field; 4 ], y : [ Field; 4 ]) -> pub Field {}
 

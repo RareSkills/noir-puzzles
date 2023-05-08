@@ -1,7 +1,6 @@
-// The inputs of the main function are fields, but we want to return "x" greater
-// than “y.” This wouldn't work because fields cannot be compared in Noir. In
-// other for the comparison to work, you must cast them to a valid uint type
-// before we can compare them.
+// The goal is to modify the main function to return true if the value of "x" is greater than the value of "y". 
+// However, fields cannot be directly compared in Noir. To make the comparison work, you must cast them to a valid
+// uint type first. Then, perform the comparison and return the result.
 
 fn main(x : Field, y : pub Field) -> pub bool {}
 

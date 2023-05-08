@@ -1,5 +1,4 @@
-// The goal is to modify the main function to add the two inputs and return the
-// result of the addition
+// Modify the "main" function to add the two inputs and return the result of the addition.
 
 fn main(x : Field, y : Field) -> pub Field {}
 
