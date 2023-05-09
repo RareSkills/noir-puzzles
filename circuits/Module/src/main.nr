@@ -9,7 +9,9 @@
 // 4. Test your implementation by running the included "test_main" function with
 // nargo test inside this directory.
 
-fn main(x : Field, y : Field) -> pub(Field, Field, Field, Field) {}
+fn main(x : Field, y : Field) -> pub(Field, Field, Field, Field) {
+  // your code here
+}
 
 ////////////////////
 //     TESTS      //
@@ -17,9 +19,9 @@ fn main(x : Field, y : Field) -> pub(Field, Field, Field, Field) {}
 #[test]
 // Do not modify this function
 fn test_main() {
-    let(a, b, c, d) = main(4, 2);
-    constrain a == 6;
-    constrain b == 2;
-    constrain c == 8;
-    constrain d == 2;
+  let(a, b, c, d) = main(4, 2);
+  constrain a == 6;
+  constrain b == 2;
+  constrain c == 8;
+  constrain d == 2;
 }

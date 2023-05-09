@@ -1,9 +1,13 @@
 // Import the poseidon hash_1 hash method from the noir standard library,
-// hash the input variable 'x', and return the output of the hash as a variable 'out'.
+// hash the input variable 'x', and return the output of the hash as a variable
+// 'out'.
 
-// HINT: use the correct datatype
+// For instructions on how to use the Poseidon hash, refer to:
+// https://github.com/noir-lang/docs/blob/master/docs/standard_library/cryptographic_primitives/00_hashes.md#poseidon.
 
-fn main(x : Field) -> pub Field {}
+fn main(x : Field) -> pub Field {
+  // your code here
+}
 
 ////////////////////
 //     TESTS      //
@@ -11,6 +15,10 @@ fn main(x : Field) -> pub Field {}
 #[test]
 // Do not modify this function
 fn test_main() {
-    constrain main(256) ==
-        0x0430fbd12a16d8729d8452729d5ee831a85918c402c77ae3b8da153c8725e206;
+  constrain main(256) ==
+      0x0430fbd12a16d8729d8452729d5ee831a85918c402c77ae3b8da153c8725e206;
+  constrain main(2390) !=
+      0xc97bfaf2f8ee708c303a06d134f5ecd8389ae0432af62dc132a24118292866bb;
+  constrain main(0) ==
+      0x2a09a9fd93c590c26b91effbb2499f07e8f7aa12e2b4940a3aed2411cb65e11c;
 }
