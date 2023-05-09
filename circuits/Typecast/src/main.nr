@@ -1,14 +1,19 @@
-// The goal is to modify the main function to return true if the value of "x" is greater than the value of "y". 
-// However, fields cannot be directly compared in Noir. To make the comparison work, you must cast them to a valid
-// uint type first. Then, perform the comparison and return the result.
+// The goal is to modify the main function to return true if the value of "x" is
+// greater than the value of "y". However, fields cannot be directly compared in
+// Noir. To make the comparison work, you must cast them to a valid uint type
+// first. Then, perform the comparison and return the result.
 
-fn main(x : Field, y : pub Field) -> pub bool {}
+fn main(x : Field, y : pub Field) -> pub bool {
+  // your code here
+}
 
 ////////////////////
 //     TESTS      //
 ////////////////////
 #[test]
 // Do not modify this function
-fn test_main() { 
-    constrain main(1, 2) == false; 
+fn test_main() {
+  constrain main(1, 2) == false;
+  constrain main(188, 32) == true;
+  constrain main(20, 20) != true;
 }
