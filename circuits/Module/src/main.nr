@@ -1,18 +1,24 @@
+// Using a module, implement a function that performs basic mathematical operations on two
+// integers; "addition", "subtraction", "multiplication" and "division".
+
 // Instructions:
 // 1. Define four functions in the "math.nr" file: "add", "sub", "mul", and
 // "div". Each function should take two integer arguments and return the result
 // of the corresponding operation.
-// 2. In this file, the "main" function takes two integer inputs, "x" and "y".
-// Use the "math.nr" file as a module and use the functions you defined in step
-// 2 to perform addition, subtraction, multiplication, and division of "x" and
-// "y". Store the results in separate variables and return them as a tuple.
-// 4. Test your implementation by running the included "test_main" function with
-// nargo test inside this directory.
+// 2. In this file, the "main" function takes three integer inputs "x", "y" and
+// "op", where "op" is the operation to carry out on "x" and "y" (0 == add, 1 ==
+// sub, 2 == mul, 3 == div).
+// 3. Use the "math.nr" file as a module here and use the functions you defined
+// in step 1 to perform an addition, subtraction, multiplication, or division of
+// "x" and "y" based on the operation number "op".
+// 4. Store the result in a mutable variable and return it.
+// 5. Test your implementation by running the included "test_main" function with
+// 'nargo test' inside this directory.
 
 // See here: https://noir-lang.org/modules_packages_crates/modules/
 
-fn main(x : Field, y : Field) -> pub(Field, Field, Field, Field) {
-  // your code here
+fn main(x : Field, y : Field, op : Field) -> pub Field {
+    // your code here
 }
 
 ////////////////////
@@ -21,9 +27,9 @@ fn main(x : Field, y : Field) -> pub(Field, Field, Field, Field) {
 #[test]
 // Do not modify this function
 fn test_main() {
-  let(a, b, c, d) = main(4, 2);
-  constrain a == 6;
-  constrain b == 2;
-  constrain c == 8;
-  constrain d == 2;
+    constrain main(4, 2, 0) == 6;
+    constrain main(80, 2, 1) == 78;
+    constrain main(10, 10, 2) == 100;
+    constrain main(50, 10, 3) == 5;
+    constrain main(4, 2, 5) == 0;
 }
