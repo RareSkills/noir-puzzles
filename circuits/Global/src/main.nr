@@ -4,6 +4,7 @@
 
 fn main(x : Field) -> pub Field {
   // your code here
+  globalVar * x
 }
 
 ////////////////////
