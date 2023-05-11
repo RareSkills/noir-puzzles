@@ -3,6 +3,8 @@
 // mimc_bn254 as a hashing mechanism.
 // Return the hash result as a public field.
 
+// See here: https://noir-lang.org/standard_library/cryptographic_primitives/hashes/#mimc_bn254-and-mimc
+
 fn main(a : Field, salt : Field) -> pub Field {
   // your code here
 }

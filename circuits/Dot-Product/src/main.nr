@@ -2,6 +2,9 @@
 // two arrays and then sum up those products.
 // Return the result of the calculation.
 
+// Hint: you will need a loop
+// See here: https://noir-lang.org/language_concepts/control_flow/#loops
+
 fn main(x : [ Field; 4 ], y : [ Field; 4 ]) -> pub Field {
   // your code here
 }

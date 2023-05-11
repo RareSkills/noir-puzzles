@@ -2,6 +2,8 @@
 // it. Then, the result of the multiplication of this global variable with the
 // input of the main function should be returned.
 
+// See here: https://noir-lang.org/language_concepts/mutability/#globals
+
 fn main(x : Field) -> pub Field {
   // your code here
   globalVar * x

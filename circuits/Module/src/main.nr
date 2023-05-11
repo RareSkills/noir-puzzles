@@ -9,6 +9,8 @@
 // 4. Test your implementation by running the included "test_main" function with
 // nargo test inside this directory.
 
+// See here: https://noir-lang.org/modules_packages_crates/modules/
+
 fn main(x : Field, y : Field) -> pub(Field, Field, Field, Field) {
   // your code here
 }

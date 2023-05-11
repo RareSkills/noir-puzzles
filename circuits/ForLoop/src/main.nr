@@ -2,6 +2,8 @@
 // and a loop that adds the elements of the array. Return the result of the
 // addition.
 
+// See here: https://noir-lang.org/language_concepts/control_flow/#loops
+
 fn main() -> pub Field {
   // your code here
 }
