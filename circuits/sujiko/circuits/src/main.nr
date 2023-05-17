@@ -12,7 +12,7 @@ use dep::std;
 /// s[6]  s[7]  s[8]
 
 
-fn main(question:[Field;4], solution:[Field;9]) {
+fn main(question: pub [Field;4], solution:[Field;9]) {
    
     // Your solution starts here ..
 
