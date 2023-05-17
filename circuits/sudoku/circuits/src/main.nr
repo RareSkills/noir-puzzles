@@ -84,4 +84,3 @@ fn test_sudoku()  {
     // If the call does not revert , we assume it is correct.
     main(a,b);
 }
-
