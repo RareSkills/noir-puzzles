@@ -19,7 +19,7 @@
 - [Sujiko](https://github.com/RareSkills/noir-puzzles/tree/readme/circuits/sujiko)
 - [Sudoku](https://github.com/RareSkills/noir-puzzles/tree/readme/circuits/sudoku)
 
-## To test your solution
+## To test your solution [Excluding Sudoku and Sujiko]
 
 Go to the relevant directory 
 
@@ -30,3 +30,33 @@ cd circuits/<Relevant Puzzle>
 ```bash
 nargo test
 ```
+
+## To test Sudoku and Sujiko 
+
+### Install Foundry 
+
+```bash
+curl -L https://foundry.paradigm.xyz | bash
+```
+
+### Generate verifier contract and proofs 
+
+```bash
+cd circuits/<sudoku OR sujiko>/circuits
+nargo codegen-verifier
+```
+
+### Create proofs
+
+Input correct parameters in the `Prover.toml`
+
+```bash
+nargo prove p 
+```
+
+### Testing
+
+```bash
+forge test 
+```
+
