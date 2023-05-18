@@ -2,6 +2,7 @@
 
 ## Requirements
 - Install [Noir](https://noir-lang.org/getting_started/nargo_installation)
+- Install [Foundry](https://book.getfoundry.sh/getting-started/installation)
 
 
 ## To test your solution

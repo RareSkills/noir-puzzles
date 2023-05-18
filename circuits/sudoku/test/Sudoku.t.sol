@@ -57,5 +57,5 @@ contract Noir is Test {
         bytes memory proof_in_bytes = vm.parseBytes(proof);
         ultraverifier.verify(proof_in_bytes,wrong_input);
     }
-    
+
 }
