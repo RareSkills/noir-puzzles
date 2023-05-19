@@ -89,3 +89,6 @@ nargo prove p
 forge test 
 ```
 
+### Write Custom For loops in Noir 
+[Link](https://github.com/noir-lang/docs/issues/91#event-9026512607)
+
