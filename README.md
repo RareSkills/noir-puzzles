@@ -33,7 +33,9 @@ cd circuits/<Relevant Puzzle>
 nargo test
 ```
 
-## Sudoku 
+## Sudoku
+![Screenshot 2023-05-20 at 12 48 37 AM](https://github.com/RareSkills/noir-puzzles/assets/91280922/c2e09237-41f2-4f97-a59a-f5df14a85ad5)
+ 
 
 ### Goal: Create a 4×4 Sudoku verifier .
 
@@ -46,6 +48,9 @@ nargo test
 
 
 ## Sujiko 
+![Screenshot 2023-05-20 at 12 45 32 AM](https://github.com/RareSkills/noir-puzzles/assets/91280922/5cb45f0b-0dfb-4316-8ab7-0b8f5b708beb)
+
+
 
 ### Goal: Create a 3×3 Sujiko verifier.
 
