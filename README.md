@@ -5,6 +5,7 @@
 - Install [Foundry](https://book.getfoundry.sh/getting-started/installation)
 
 ## Recommended Order for the puzzles
+- [HelloNoir](https://github.com/RareSkills/noir-puzzles/tree/main/circuits/HelloNoir) - Example on how to test noir with foundry . Run `forge test`
 - [Addition](https://github.com/RareSkills/noir-puzzles/tree/readme/circuits/Addition)
 - [Global](https://github.com/RareSkills/noir-puzzles/tree/readme/circuits/Global)
 - [For Loop](https://github.com/RareSkills/noir-puzzles/tree/readme/circuits/ForLoop)
@@ -19,6 +20,7 @@
 - [Sujiko](https://github.com/RareSkills/noir-puzzles/tree/readme/circuits/sujiko)
 - [Sudoku](https://github.com/RareSkills/noir-puzzles/tree/readme/circuits/sudoku)
 
+
 ## To test your solution [Excluding Sudoku and Sujiko]
 
 Go to the relevant directory 
@@ -31,7 +33,8 @@ cd circuits/<Relevant Puzzle>
 nargo test
 ```
 
-## To test Sudoku and Sujiko 
+
+## To test Sudoku and Sujiko(using foundry)
 
 ### Install Foundry 
 
