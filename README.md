@@ -33,6 +33,27 @@ cd circuits/<Relevant Puzzle>
 nargo test
 ```
 
+## Sudoku 
+
+### Goal: Create a 4×4 Sudoku verifier .
+
+### Rules: 
+- There will be 4 columns and 4 rows. 
+- Sum of each row/column should be 10. 
+- Numbers from 1 to 4(inclusive) should be used for this.
+- There should be no repetition in numbers for any row/column .
+(For more information, checkout the circuit file)
+
+
+## Sujiko 
+
+### Goal: Create a 3×3 Sujiko verifier.
+
+### Rules:
+- The puzzle takes place on a 3x3 grid with four circled number clues at the centre of each quadrant which indicate the sum of the four numbers in that quadrant.
+- The numbers 1-9 must be placed in the grid, in accordance with the circled clues, to complete the puzzle.
+(For more information, checkout the circuit file)
+
 
 ## To test Sudoku and Sujiko(using foundry)
 
