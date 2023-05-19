@@ -4,6 +4,4 @@
 [submodule "circuits/sudoku/lib/forge-std"]
 	path = circuits/sudoku/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
-[submodule "circuits/SimpleAdd/lib/forge-std"]
-	path = circuits/SimpleAdd/lib/forge-std
-	url = https://github.com/foundry-rs/forge-std
+
