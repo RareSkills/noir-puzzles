@@ -17,8 +17,8 @@
 - [Max edge](https://github.com/RareSkills/noir-puzzles/tree/main/circuits/Max-Edge)
 - [Salt](https://github.com/RareSkills/noir-puzzles/tree/main/circuits/Salt)
 - [Poseidon](https://github.com/RareSkills/noir-puzzles/tree/main/circuits/Poseidon)
-- [Sujiko](https://github.com/RareSkills/noir-puzzles/tree/main/circuits/sujiko)
-- [Sudoku](https://github.com/RareSkills/noir-puzzles/tree/main/circuits/sudoku)
+- [Sujiko](https://github.com/RareSkills/noir-puzzles/tree/main/circuits/Sujiko)
+- [Sudoku](https://github.com/RareSkills/noir-puzzles/tree/main/circuits/Sudoku)
 
 
 ## To test your solution [Excluding Sudoku and Sujiko]
@@ -71,7 +71,7 @@ curl -L https://foundry.paradigm.xyz | bash
 ### Generate verifier contract and proofs 
 
 ```bash
-cd circuits/<sudoku OR sujiko>/circuits
+cd circuits/<Sudoku OR Sujiko>/circuits
 nargo codegen-verifier
 ```
 
