@@ -1,6 +1,7 @@
 // Modify the "main" function so it takes an array of field of length '3',
 // and a loop that adds the elements of the array. Return the result of the
 // addition.
+// Note: Noir uses an implicit return method in functions
 
 // See here: https://noir-lang.org/language_concepts/control_flow/#loops
 

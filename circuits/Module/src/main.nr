@@ -1,11 +1,11 @@
 // Using a module, implement a function that performs basic mathematical operations on two
-// integers; "addition", "subtraction", "multiplication" and "division".
+// fieldss; "addition", "subtraction", "multiplication" and "division".
 
 // Instructions:
 // 1. Define four functions in the "math.nr" file: "add", "sub", "mul", and
-// "div". Each function should take two integer arguments and return the result
+// "div". Each function should take two fields arguments and return the result
 // of the corresponding operation.
-// 2. In this file, the "main" function takes three integer inputs "x", "y" and
+// 2. In this file, the "main" function takes three fields inputs "x", "y" and
 // "op", where "op" is the operation to carry out on "x" and "y" (0 == add, 1 ==
 // sub, 2 == mul, 3 == div).
 // 3. Use the "math.nr" file as a module here and use the functions you defined
