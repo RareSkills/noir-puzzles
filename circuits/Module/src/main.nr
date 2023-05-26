@@ -1,5 +1,5 @@
 // Using a module, implement a function that performs basic mathematical operations on two
-// fieldss; "addition", "subtraction", "multiplication" and "division".
+// fields; "addition", "subtraction", "multiplication" and "division".
 
 // Instructions:
 // 1. Define four functions in the "math.nr" file: "add", "sub", "mul", and
