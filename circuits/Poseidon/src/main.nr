@@ -1,6 +1,5 @@
 // Import the poseidon hash_1 hash method from the noir standard library,
-// hash the input variable 'x', and return the output of the hash as a variable
-// 'out'.
+// return the hashed value.
 
 // For instructions on how to use the Poseidon hash, refer to:
 // https://github.com/noir-lang/docs/blob/master/docs/standard_library/cryptographic_primitives/00_hashes.md#poseidon.
