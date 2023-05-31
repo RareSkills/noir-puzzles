@@ -5,6 +5,10 @@
 // For instructions on how to use the Poseidon hash, refer to:
 // https://github.com/noir-lang/docs/blob/master/docs/standard_library/cryptographic_primitives/00_hashes.md#poseidon.
 
+// Note: We are able to import the entire standard library as before, or specific functions.
+//       For example, below is the import syntax for a specific elliptic curve method.
+//       use dep::std::ec::tecurve::affine::Curve;
+
 fn main(x : Field) -> pub Field {
   // your code here
 }
