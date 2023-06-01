@@ -4,6 +4,8 @@
 // Return the hash result as a public field.
 
 // See here: https://noir-lang.org/standard_library/cryptographic_primitives/hashes/#mimc_bn254-and-mimc
+// Note: An example of importing the standard library can be seen from the link below.
+//       https://noir-lang.org/standard_library/logging
 
 fn main(a : Field, salt : Field) -> pub Field {
   // your code here
