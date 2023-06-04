@@ -73,7 +73,8 @@ fn main(question: pub [Field;16], answer :  [Field;16]) -> pub Field{
 
     // Solution Starts Here ..
 
-   
+    
+    5 // Main function must return a Field Value. This will not pass test
 
 }
 
