@@ -17,8 +17,8 @@
 - [Salt](https://github.com/RareSkills/noir-puzzles/tree/main/circuits/Salt)
 - [Poseidon](https://github.com/RareSkills/noir-puzzles/tree/main/circuits/Poseidon)
 - [HelloNoir](https://github.com/RareSkills/noir-puzzles/tree/main/circuits/HelloNoir) - Example on how to test noir with foundry . Run `forge test`
-- [Sujiko](https://github.com/RareSkills/noir-puzzles/tree/main/circuits/Sujiko)
 - [Sudoku](https://github.com/RareSkills/noir-puzzles/tree/main/circuits/Sudoku)
+- [Sujiko](https://github.com/RareSkills/noir-puzzles/tree/main/circuits/Sujiko)
 
 
 ## To test your solution [Excluding Sudoku and Sujiko]
