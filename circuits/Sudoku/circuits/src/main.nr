@@ -73,8 +73,12 @@ fn main(question: pub [Field;16], answer :  [Field;16]) -> pub Field{
 
     // Solution Starts Here ..
 
-   
 
+    // Below we will return the value '5'. This is a temporary value to 
+    // prevent a compiler error, as the main function requires a return 
+    // value of the type Field.
+    
+    5
 }
 
 #[test]

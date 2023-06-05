@@ -1,7 +1,10 @@
+[submodule "circuits/HelloNoir/lib/forge-std"]
+	path = circuits/HelloNoir/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
 [submodule "circuits/sujiko/lib/forge-std"]
 	path = circuits/sujiko/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
 [submodule "circuits/sudoku/lib/forge-std"]
-	path = circuits/sudoku/lib/forge-std
+	path = circuits/Sudoku/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
 

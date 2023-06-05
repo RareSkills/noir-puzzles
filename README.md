@@ -17,8 +17,8 @@
 - [Salt](https://github.com/RareSkills/noir-puzzles/tree/main/circuits/Salt)
 - [Poseidon](https://github.com/RareSkills/noir-puzzles/tree/main/circuits/Poseidon)
 - [HelloNoir](https://github.com/RareSkills/noir-puzzles/tree/main/circuits/HelloNoir) - Example on how to test noir with foundry . Run `forge test`
-- [Sujiko](https://github.com/RareSkills/noir-puzzles/tree/main/circuits/Sujiko)
 - [Sudoku](https://github.com/RareSkills/noir-puzzles/tree/main/circuits/Sudoku)
+- [Sujiko](https://github.com/RareSkills/noir-puzzles/tree/main/circuits/Sujiko)
 
 
 ## To test your solution [Excluding Sudoku and Sujiko]
@@ -34,8 +34,8 @@ nargo test
 ```
 
 ## Sudoku
-![Screenshot 2023-05-20 at 12 48 37 AM](https://github.com/RareSkills/noir-puzzles/assets/91280922/c2e09237-41f2-4f97-a59a-f5df14a85ad5)
- 
+![sudoku](https://github.com/burke-md/noir-puzzles/assets/22263098/608b1296-82fe-4148-8c81-1648ec2f971f)
+
 
 ### Goal: Create a 4×4 Sudoku verifier .
 
@@ -48,8 +48,7 @@ nargo test
 
 
 ## Sujiko 
-![Screenshot 2023-05-20 at 12 45 32 AM](https://github.com/RareSkills/noir-puzzles/assets/91280922/5cb45f0b-0dfb-4316-8ab7-0b8f5b708beb)
-
+![sujiko](https://github.com/burke-md/noir-puzzles/assets/22263098/fe4f8a86-10eb-4c81-af9c-52ca64fc6008)
 
 
 ### Goal: Create a 3×3 Sujiko verifier.
@@ -68,10 +67,21 @@ nargo test
 curl -L https://foundry.paradigm.xyz | bash
 ```
 
-### Generate verifier contract and proofs 
+### Navigate to specific puzzle
 
 ```bash
 cd circuits/<Sudoku OR Sujiko>/circuits
+```
+
+### Load submodules
+
+```bash
+forge install
+```
+
+### Generate verifier contract and proofs 
+
+```bash
 nargo codegen-verifier
 ```
 
@@ -89,6 +99,6 @@ nargo prove p
 forge test 
 ```
 
-### Write Custom For loops in Noir 
-[Link](https://github.com/noir-lang/docs/issues/91#event-9026512607)
+## Helpful Links
+Information about writting custom forloops can be found [here](https://github.com/noir-lang/docs/issues/91#event-9026512607).
 
