@@ -68,10 +68,21 @@ nargo test
 curl -L https://foundry.paradigm.xyz | bash
 ```
 
-### Generate verifier contract and proofs 
+### Navigate to specific puzzle
 
 ```bash
 cd circuits/<Sudoku OR Sujiko>/circuits
+```
+
+### Load submodules
+
+```bash
+forge install
+```
+
+### Generate verifier contract and proofs 
+
+```bash
 nargo codegen-verifier
 ```
 
