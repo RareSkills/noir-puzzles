@@ -12,6 +12,6 @@ fn main(a : u64, lowerbound : pub u64, upperbound : pub u64) -> pub u64 {
 #[test]
 // Do not modify this function
 fn test_range() {
-  constrain main(1, 2, 5) == 0;
-  constrain main(10, 1, 20) == 1;
+  assert(main(1, 2, 5) == 0);
+  assert(main(10, 1, 20) == 1);
 }
