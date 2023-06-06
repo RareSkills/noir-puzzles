@@ -10,6 +10,6 @@ fn main(x : Field, y : Field) -> pub Field {
 #[test]
 // Do not modify this function
 fn test_add() {
-  constrain main(4, 5) == 9;
-  constrain main(2, 9) == 11;
+  assert(main(4, 5) == 9);
+  assert(main(2, 9) == 11);
 }
