@@ -13,7 +13,7 @@ fn main(x : Field, y : pub Field) -> pub bool {
 #[test]
 // Do not modify this function
 fn test_main() {
-  constrain main(1, 2) == false;
-  constrain main(188, 32) == true;
-  constrain main(20, 20) != true;
+  assert(main(1, 2) == false); 
+  assert(main(188, 32) == true); 
+  assert(main(20, 20) != true); 
 }
