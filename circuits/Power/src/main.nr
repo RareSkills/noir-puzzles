@@ -13,6 +13,6 @@ fn main(x : Field, y : Field) -> pub Field {
 #[test]
 // Do not modify this function
 fn test_power() {
-  constrain main(2, 4) == 16;
-  constrain main(32, 5) == 33554432;
+  assert(main(2, 4) == 16);
+  assert(main(32, 5) == 33554432);
 }
