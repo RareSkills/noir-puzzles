@@ -31,5 +31,5 @@ fn test_main() {
     assert(main(80, 2, 1) == 78); 
     assert(main(10, 10, 2) == 100); 
     assert(main(50, 10, 3) == 5); 
-    assert( main(4, 2, 5) == 0); 
+    assert(main(4, 2, 5) == 0); 
 }
