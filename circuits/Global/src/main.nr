@@ -15,7 +15,7 @@ fn main(x : Field) -> pub Field {
 #[test]
 // Do not modify this function
 fn test_main() {
-  constrain main(2) == 20;
-  constrain main(10) == 100;
-  constrain main(203) != 120;
+  assert(main(2)==20);
+  assert(main(10)==100);
+  assert(main(203)!=120);
 }

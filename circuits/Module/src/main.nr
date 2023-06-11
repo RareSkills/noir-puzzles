@@ -27,9 +27,9 @@ fn main(x : Field, y : Field, op : Field) -> pub Field {
 #[test]
 // Do not modify this function
 fn test_main() {
-    constrain main(4, 2, 0) == 6;
-    constrain main(80, 2, 1) == 78;
-    constrain main(10, 10, 2) == 100;
-    constrain main(50, 10, 3) == 5;
-    constrain main(4, 2, 5) == 0;
+    assert(main(4, 2, 0) == 6);
+    assert(main(80, 2, 1) == 78); 
+    assert(main(10, 10, 2) == 100); 
+    assert(main(50, 10, 3) == 5); 
+    assert(main(4, 2, 5) == 0); 
 }

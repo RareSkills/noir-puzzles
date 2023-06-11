@@ -15,7 +15,7 @@ fn main(x : [ Field; 4 ], y : [ Field; 4 ]) -> pub Field {
 #[test]
 // Do not modify this function
 fn test_main() {
-  constrain main([ 1, 2, 3, 4 ], [ 5, 6, 7, 8 ]) == 70;
-  constrain main([ 1, 2, 3, 4 ], [ 5, 6, 7, 8 ]) != 3000;
-  constrain main([ 10, 40, 3, 76 ], [ 330, 26, 2, 190 ]) == 18786;
+  assert(main([ 1, 2, 3, 4 ], [ 5, 6, 7, 8 ]) == 70); 
+  assert(main([ 1, 2, 3, 4 ], [ 5, 6, 7, 8 ]) != 3000); 
+  assert(main([ 10, 40, 3, 76 ], [ 330, 26, 2, 190 ]) == 18786); 
 }
