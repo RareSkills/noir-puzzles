@@ -12,7 +12,7 @@ use dep::std;
 //                                                                                    [4, 1, 2, 3]
 //                                                                                    [2, 3, 4, 1]
 
-fn main(question: pub [Field;16], answer :  [Field;16]) -> pub Field{
+fn main(question: pub [Field; 16], answer : [Field; 16]) {
        
     // Verifying the Question
     for i in 0..16 {
@@ -24,7 +24,7 @@ fn main(question: pub [Field;16], answer :  [Field;16]) -> pub Field{
     }
 
 // Check first row has 3 inputs as 0 and 1 input as non zero
-    let mut m:[Field;16] = [0;16];
+    let mut m:[Field; 16] = [0; 16];
     for i in 0..4 {
     let mut a = question[i] ;
     assert(a == question[i]);
@@ -72,19 +72,13 @@ fn main(question: pub [Field;16], answer :  [Field;16]) -> pub Field{
     assert(3 == (m[12] + m[13] +m[14] + m[15]));    
 
     // Solution Starts Here ..
-
-
-    // Below we will return the value '5'. This is a temporary value to 
-    // prevent a compiler error, as the main function requires a return 
-    // value of the type Field.
-    
-    5
 }
 
 #[test]
 fn test_sudoku()  {
-    let a:[Field;16] = [1,0,0,0,0,2,0,0,4,0,0,0,0,0,0,1];
-    let b:[Field;16] = [1,4,3,2,3,2,1,4,4,1,2,3,2,3,4,1];
+    let a:[Field; 16] = [1,0,0,0,0,2,0,0,4,0,0,0,0,0,0,1];
+    let b:[Field; 16] = [1,4,3,2,3,2,1,4,4,1,2,3,2,3,4,1];
+    
     // If the call does not revert , we assume it is correct.
     main(a,b);
 }
