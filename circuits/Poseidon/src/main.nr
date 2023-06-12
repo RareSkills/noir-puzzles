@@ -2,7 +2,8 @@
 // return the hashed value.
 
 // For instructions on how to use the Poseidon hash, refer to:
-// https://noir-lang.org/standard_library/cryptographic_primitives/hashes#pedersen
+//https://noir-lang.org/standard_library/cryptographic_primitives/hashes/#poseidon
+
 
 // Note: We are able to import the entire standard library as before, or specific functions.
 //       For example, below is the import syntax for a specific elliptic curve method.
