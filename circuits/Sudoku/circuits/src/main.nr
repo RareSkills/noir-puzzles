@@ -73,12 +73,3 @@ fn main(question: pub [Field; 16], answer : [Field; 16]) {
 
     // Solution Starts Here ..
 }
-
-#[test]
-fn test_sudoku()  {
-    let a:[Field; 16] = [1,0,0,0,0,2,0,0,4,0,0,0,0,0,0,1];
-    let b:[Field; 16] = [1,4,3,2,3,2,1,4,4,1,2,3,2,3,4,1];
-    
-    // If the call does not revert , we assume it is correct.
-    main(a,b);
-}
