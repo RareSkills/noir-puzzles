@@ -44,10 +44,10 @@ Load submodules
 forge install
 ```
 
-Generate verifier contract and proofs 
+Generate input/output files
 
 ```bash
-nargo codegen-verifier
+nargo check
 ```
 
 Create proofs
