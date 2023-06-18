@@ -42,10 +42,10 @@ fn main(
     
     // Compute commitment for note
     let note_commitment = create_commitment(pubkey[0], pubkey[1], secret);
-    std::println(note_commitment);
+    // std::println(note_commitment);
     // Compute nullifier for note
     let nullifier = check_nullifier(note_commitment, index, priv_key);
-
+    std::println(nullifier);
     // Check that the input note commitment is in the root
     let is_member = test_merkle_membership(note_root, note_commitment, index, note_hash_path);
 
