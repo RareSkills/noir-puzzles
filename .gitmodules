@@ -8,3 +8,6 @@
 	path = circuits/Sudoku/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
 
+[submodule "noir-builds/Eth-Splitter/lib/forge-std"]
+	path = noir-builds/Eth-Splitter/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
