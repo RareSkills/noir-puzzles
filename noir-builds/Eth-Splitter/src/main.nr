@@ -22,38 +22,29 @@ fn test_merkle_membership(note_root: Field, note_commitment: Field, index: Field
     nullifier
 }
 
-// fn main(leaf:Field,leaf1:Field) -> pub Field {
-//     let ret = std::hash::pedersen([leaf,leaf1]);
-//     let a = ret[0];
-//     std::println(a);
-//     ret[0]
-// }
 
 fn main(
-  recipient: pub Field,        // Recipient of funds
   priv_key: Field,             // Private key of note
   note_root: pub Field,        // Merkle membership proof
   index: Field,                // Index of note in merkle tree
   note_hash_path: [Field; 3],  // Merkle path of note
   secret: Field,               // Private key
-) -> pub [Field; 2] {
+) -> pub [Field; 1] {
     // Derive public key from private key to show ownership
     let pubkey = derive_public_key(priv_key);
     
     // Compute commitment for note
     let note_commitment = create_commitment(pubkey[0], pubkey[1], secret);
-    // std::println(note_commitment);
     // Compute nullifier for note
     let nullifier = check_nullifier(note_commitment, index, priv_key);
     std::println(nullifier);
     // Check that the input note commitment is in the root
     let is_member = test_merkle_membership(note_root, note_commitment, index, note_hash_path);
 
-    // std::println(is_member);
     // Constraint check
     constrain is_member == 1;
     
     // Cannot have unused variables, return the recipient as public output of the circuit
-    [nullifier, recipient]
+    [nullifier]
 }
 
