@@ -11,3 +11,6 @@
 [submodule "noir-builds/Eth-Splitter/lib/forge-std"]
 	path = noir-builds/Eth-Splitter/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "noir-builds/Eth-Splitter/lib/openzeppelin-contracts"]
+	path = noir-builds/Eth-Splitter/lib/openzeppelin-contracts
+	url = https://github.com/openzeppelin/openzeppelin-contracts
