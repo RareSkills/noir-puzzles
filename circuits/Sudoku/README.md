@@ -44,20 +44,6 @@ Load submodules
 forge install
 ```
 
-Generate verifier contract and proofs 
-
-```bash
-nargo codegen-verifier
-```
-
-Create proofs
-
-Input correct parameters in the `Prover.toml`
-
-```bash
-nargo prove p 
-```
-
 Run Foundry test
 
 ```bash
