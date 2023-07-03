@@ -14,6 +14,10 @@ use dep::std;
 fn main(question: pub [Field; 4], solution:[Field; 9]) {
    
     // Your solution starts here ..
+    std::println("Question: ");
+    std::println(question);
+    std::println("Solution: ");
+    std::println(solution);
 
 }
 

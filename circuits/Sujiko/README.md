@@ -14,16 +14,6 @@ In this puzzle we will integrate [Foundry](https://book.getfoundry.sh/) testing 
 (For more information, checkout the circuit file or this [wikipedia article](https://en.wikipedia.org/wiki/Sujiko))
 
 
-## Note:
-
-Within `main.nr` the `main()` the function signature will need to be updated. It currently does not include a return type.
-
-```
-fn main(question: pub [Field; 4], solution:[Field; 9])
-```
-
-This is to ensure users do not face a return value type error on first compile. The test suit will require a `bool` value be returned from `main()`.
-
 ## Testing 
 
 Install Foundry 
@@ -42,20 +32,6 @@ Load submodules
 
 ```bash
 forge install
-```
-
-Generate verifier contract and proofs 
-
-```bash
-nargo codegen-verifier
-```
-
-Create proofs
-
-Input correct parameters in the `Prover.toml`
-
-```bash
-nargo prove p 
 ```
 
 Run Foundry test
