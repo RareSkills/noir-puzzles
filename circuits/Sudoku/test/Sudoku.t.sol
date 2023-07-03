@@ -45,7 +45,7 @@ contract Noir is Test {
         wrong_input[15] = bytes32(0x0000000000000000000000000000000000000000000000000000000000000002);
     }
 
-    function test_correct_solution() public {
+    function test_correct_solution() public view {
         string memory proof = vm.readLine("./circuits/proofs/p.proof");
         bytes memory proof_in_bytes = vm.parseBytes(proof);
         ultraverifier.verify(proof_in_bytes,correct_input);
