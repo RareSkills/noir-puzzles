@@ -14,16 +14,6 @@ In this puzzle we will integrate [Foundry](https://book.getfoundry.sh/) testing 
 - There should be no repetition in numbers for any row/column .
 (For more information, checkout the circuit file)
 
-## Note:
-
-Within `main.nr` the `main()` the function signature will need to be updated. It currently does not include a return type.
-
-```
-fn main(question: pub [Field; 16], answer : [Field; 16]) 
-```
-
-This is to ensure users do not face a return value type error on first compile. The test suit will require a `bool` value be returned from `main()`.
-
 ## Testing 
 
 Install Foundry 
@@ -42,6 +32,12 @@ Load submodules
 
 ```bash
 forge install
+```
+
+Solve code challenge within `src/main.nr` and create proof
+
+```bash
+nargo prove p
 ```
 
 Run Foundry test
