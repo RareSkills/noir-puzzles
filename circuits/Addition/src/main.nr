@@ -1,7 +1,7 @@
 // Modify the "main" function to add the two inputs and return the result of the addition.
 
 fn main(x : Field, y : Field) -> pub Field {
-  // your code here
+  x + y
 }
 
 ////////////////////
